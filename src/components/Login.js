@@ -17,7 +17,7 @@ const Login = () => {
         <div className="flex flex-col">
           <input type="text" placeholder="Fullname" className="outline-none" />
 
-          <input type="email" placeholder="Email" className="" />
+          <input type="email" placeholder="Email"  />
 
           <input type="text" placeholder="Password" />
         </div>
