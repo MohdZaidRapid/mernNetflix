@@ -1,7 +1,13 @@
+import Body from "./components/Body";
+
 import "./App.css";
 
 function App() {
-  return <div className="App">Let's build netflix</div>;
+  return (
+    <div>
+      <Body />
+    </div>
+  );
 }
 
 export default App;
