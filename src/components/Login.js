@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 
 const Login = () => {
+  const [isLogin, setIsLogin] = useState(false);
   return (
     <div>
       <Header />
@@ -12,14 +13,27 @@ const Login = () => {
           alt="banner"
         />
       </div>
-      <form className="flex flex-col w-3/12 p-12 my-36 left-0 right-0 items-center justify-center mx-auto absolute bg-black  ">
+      <form className="flex flex-col w-3/12 p-12 my-36 left-0 right-0 items-center justify-center mx-auto absolute bg-black opacity-90  ">
         <h1 className="text-3xl  text-white mb-5 font-bold">Signup</h1>
         <div className="flex flex-col">
-          <input type="text" placeholder="Fullname" className="outline-none" />
+          <input
+            type="text"
+            placeholder="Fullname"
+            className="outline-none p-3 my-2 rounded-md bg-gray-800 text-white"
+          />
 
-          <input type="email" placeholder="Email"  />
+          <input
+            type="email"
+            placeholder="Email"
+            className="outline-none p-3 my-2 rounded-md bg-gray-800 text-white"
+          />
 
-          <input type="text" placeholder="Password" className="" />
+          <input
+            type="password"
+            placeholder="Password"
+            className="outline-none p-3 my-2 rounded-md bg-gray-800 text-white"
+          />
+          <p>Already have an account</p>
         </div>
       </form>
     </div>
