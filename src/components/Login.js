@@ -33,7 +33,7 @@ const Login = () => {
             placeholder="Password"
             className="outline-none p-3 my-2 rounded-md bg-gray-800 text-white"
           />
-          <p>Already have an account</p>
+          <p className="text-white">Already have an account?</p>
         </div>
       </form>
     </div>
